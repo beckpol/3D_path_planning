@@ -1,0 +1,26 @@
+
+------------------------------------------------------
+Point Cloud Library Installation for Ubuntu
+------------------------------------------------------ 
+Source:  http://pointclouds.org/downloads/linux.html
+
+The installation instructions are:
+sudo add-apt-repository ppa:v-launchpad-jochen-sprickerhof-de/pcl
+sudo apt-get update
+sudo apt-get install libpcl-all
+
+------------------------------------------
+Building and Running the project
+------------------------------------------
+1. After PCL and cmake installation create a folder (ex. /home/project).
+2. Copy all the project inside this folder
+3. In console (ctrl + alt + t) go to the choosen folder. (ex. cd /home/project)
+4. type:
+	mkdir build
+	cd build
+	cmake ..		# use cmake -DCMAKE_BUILD_TYPE=Release .. for release version
+	make			# use make -j3 or -j4 to speed-up the compile process
+5. To run the project write
+	./Kinect		# use ./Kinect -v for a verbose output
+
+The compiled program is in the build directory.
